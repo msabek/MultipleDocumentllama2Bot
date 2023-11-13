@@ -86,7 +86,12 @@ def main():
     st.sidebar.title("Drop your contract documents here ")
     uploaded_files = st.sidebar.file_uploader("Upload files", accept_multiple_files=True)
 
+    image = Image.open('./logo/Engoa.jpg')
+    st.sidebar.image(image, use_column_width=True)
 
+    image = Image.open('./logo/uoA.jpg')
+    st.sidebar.image(image, use_column_width=True)
+    
     if uploaded_files:
         text = []
         for file in uploaded_files:
