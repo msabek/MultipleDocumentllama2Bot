@@ -25,7 +25,7 @@ def initialize_session_state():
         st.session_state['history'] = []
 
     if 'generated' not in st.session_state:
-        st.session_state['generated'] = ["Hello! This is a contract evaluation tool"]
+        st.session_state['generated'] = ["Hello! This is a Contracts Evaluation Tool"]
         
 
     if 'past' not in st.session_state:
@@ -42,11 +42,11 @@ def display_chat_history(chain):
 
     with container:
         with st.form(key='my_form', clear_on_submit=True):
-            user_input = st.text_input("Question:", placeholder="Ask about your Documents", key='input')
+            user_input = st.text_input("Question:", placeholder="Ask me about your Documents", key='input')
             submit_button = st.form_submit_button(label='Send')
 
         if submit_button and user_input:
-            with st.spinner('Generating response...'):
+            with st.spinner(' Looking into the files...'):
                 output = conversation_chat(user_input, chain, st.session_state['history'])
 
             st.session_state['past'].append(user_input)
@@ -81,10 +81,10 @@ def main():
     load_dotenv()
     # Initialize session state
     initialize_session_state()
-    st.title("Evaluation tool for contracts sustainability evaluation ")
-    st.write('This project was programmed by Mohamed sabek as a showcase for 602 - Project procurement course ')
+    st.title("Evaluation tool for contracts sustainability ")
+    st.write('This project was Developed by group 1 as showcase for 602 - Project procurement course ')
     # Initialize Streamlit
-    st.sidebar.title("Drop your contract documents here ")
+    st.sidebar.title("Please drop your contract documents here ")
     uploaded_files = st.sidebar.file_uploader("Upload files", accept_multiple_files=True)
 
     image = Image.open('./logo/Engoa.jpg')
