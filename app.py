@@ -87,10 +87,10 @@ def main():
     st.sidebar.title("Please drop your contract documents here ")
     uploaded_files = st.sidebar.file_uploader("Upload files", accept_multiple_files=True)
 
-    image = Image.open('./logo/Engoa.jpg')
+    image = Image.open('./logo/alberta-logo-university-com.png')
     st.sidebar.image(image, use_column_width=True)
 
-    image = Image.open('./logo/uoA.jpg')
+    image = Image.open('./logo/Faculty_Wordmark_Standard.png')
     st.sidebar.image(image, use_column_width=True)
     
     if uploaded_files:
