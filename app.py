@@ -1,4 +1,5 @@
 import streamlit as st
+from PIL import Image
 from streamlit_chat import message
 from langchain.chains import ConversationalRetrievalChain
 from langchain.embeddings import HuggingFaceEmbeddings
