@@ -82,7 +82,7 @@ def main():
     # Initialize session state
     initialize_session_state()
     st.title("Evaluation tool for contracts sustainability ")
-    st.write('This project was Developed by group 1 as showcase for 602 - Project procurement course ')
+    st.write('This project was Developed by group 1 as showcase for CIV E 602 LEC A2 - Fall 2023 - CONTRACT ADMINISTRATION ')
     # Initialize Streamlit
     st.sidebar.title("Please drop your contract documents here ")
     uploaded_files = st.sidebar.file_uploader("Upload files", accept_multiple_files=True)
