@@ -25,7 +25,7 @@ def initialize_session_state():
         st.session_state['history'] = []
 
     if 'generated' not in st.session_state:
-        st.session_state['generated'] = ["Hello! This is a Contracts Evaluation Tool"]
+        st.session_state['generated'] = ["Hello! This is The Contracts Evaluation Tool"]
         
 
     if 'past' not in st.session_state:
@@ -85,7 +85,7 @@ def main():
     st.write('This Project Was Developed by Group 1 As A Showcase For Civ E 602 Lec A2 - Fall 2023 - Contract Administration course as a Final Project ')
     st.write('You Can Use This Tool to Evaluate Contracts for Sustainability ')
     st.write('Just upload your contract in PDF, WORD, or TXT format using the uploading bar on the left and write down your question in the bar below after uploading the contract.   ')
-    st.write('You can ask something like: **Is the uploaded contract considered sustainable?  And how to improve it to become more sustainable.**')
+    st.write('You can ask something like: **can you give the clauses that indicates any sustainable factors, what are their types?**')
     # Initialize Streamlit
     st.sidebar.title("Please drop your contract documents here ")
     uploaded_files = st.sidebar.file_uploader("Upload files", accept_multiple_files=True)
