@@ -83,7 +83,9 @@ def main():
     initialize_session_state()
     st.title("Evaluation tool for contracts sustainability ")
     st.write('This Project Was Developed by Group 1 As A Showcase For Civ E 602 Lec A2 - Fall 2023 - Contract Administration ')
-    st.write('You can use this tool to evaluate contracts for sustainability ')
+    st.write('You Can Use This Tool to Evaluate Contracts for Sustainability ')
+    st.write('Just upload your contract in PDF, WORD, or TXT format using the uploading bar on the left and write down your question in the bar below after uploading the contract.   ')
+    st.write('You can ask something like:  Is the uploaded contract considered sustainable?  And how to improve it to become more sustainable. ')
     # Initialize Streamlit
     st.sidebar.title("Please drop your contract documents here ")
     uploaded_files = st.sidebar.file_uploader("Upload files", accept_multiple_files=True)
